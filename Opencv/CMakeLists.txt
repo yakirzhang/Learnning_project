@@ -1,0 +1,5 @@
+project(opencv_test)
+add_executable(${PROJECT_NAME} MainScene.cpp)
+include_directories(../3rdparty/include)
+find_package(OpenCV)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${OpenCV_LIBS})

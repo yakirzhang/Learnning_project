@@ -1,0 +1,28 @@
+*.DS_Store
+._*
+*~
+build/
+build*/
+bin/
+*.swp
+tags
+.ycm_extra_conf.py
+.ycm_extra_conf.pyc
+.o
+.obj
+ouput/
+
+#vcu output files
+*.d
+*.crf
+*.o
+#vcu related files
+*.htm
+*.lnp
+*.map
+*.dep
+*.axf
+
+# clion project files
+.idea/
+cmake-build-debug/
