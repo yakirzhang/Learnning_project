@@ -12,11 +12,9 @@ const ostream &operator<<(ostream &os, cv::Mat &mat) {
 }
 int main() {
   Mat image = imread("dota.png");
-  cv::Point pt1(200,200);
-  cv::Point pt2(10,100);
+  cv::Point pt1(200, 200);
+  cv::Point pt2(100, 10);
   cv::rectangle(image, pt1, pt2, cv::Scalar(0, 255, 0), 2);
-  cv::imshow("window",image);
+  cv::imshow("window", image);
   waitKey(2000);
-
-
 }

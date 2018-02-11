@@ -1,0 +1,5 @@
+project(test_gflags)
+add_executable(${PROJECT_NAME} MainScene.cpp other.cpp)
+find_package(gflags)
+target_link_libraries(${PROJECT_NAME} PUBLIC ${GFLAGS_LIBRARIES})
+target_include_directories(${PROJECT_NAME} PUBLIC ${GFLAGS_INCLUDE_DIRS})
